@@ -219,6 +219,50 @@
         <img src="Mob2.jpg" alt="RFID Monitor Interface" class="app-screen">
       </div>
     </div>
+
+
+<div style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh; /* çox boşluq olmasın */
+  margin: 0 auto;
+  padding: 40px 0; /* yuxarı-aşağı az boşluq */
+">
+  <div class="image-wrapper" 
+       style="position:relative; display:inline-block; width:800px; 
+              height:auto; cursor:pointer; transition:transform 0.3s ease;">
+    <div class="notch" 
+         style="position:absolute; top:0; left:0; right:0; height:10px; 
+                background:rgba(255,255,255,0.15); border-top-left-radius:8px; 
+                border-top-right-radius:8px;">
+    </div>
+    <img src="WebScan.png" alt="RFID Monitor Interface" 
+         class="app-screen" 
+         style="width:100%; height:auto; border-radius:12px; 
+                box-shadow:0 4px 12px rgba(0,0,0,0.4); transition:all 0.3s ease;">
+    <div class="hover-overlay" 
+         style="position:absolute; inset:0; background:rgba(0,0,0,0.2); 
+                border-radius:12px; opacity:0; transition:opacity 0.3s ease;">
+    </div>
+  </div>
+</div>
+
+<style>
+.image-wrapper:hover {
+  transform: scale(1.05);
+}
+.image-wrapper:hover .hover-overlay {
+  opacity: 1;
+}
+.image-wrapper:hover .app-screen {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+</style>
+
+
+
+
   </section>
 
   <!-- ARXİTEKTURA -->
